@@ -589,6 +589,11 @@
       border-left: 4px solid var(--cyan);
       background: rgba(82, 168, 216, .10);
       color: var(--ink);
+      display: none;
+    }
+
+    .branch-note.is-visible {
+      display: block;
     }
 
     .branch-note.pressure {
@@ -868,11 +873,11 @@
         <p class="kicker">图表 1 | 三种情绪关键词词云</p>
         <h2>评论区的情绪，先落在词语里。</h2>
         <div class="chart-shell">
-          <div class="word-grid"><div class="word-cell"><h3>积极评论高频关键词</h3><p>评论区积极情绪最高频关键词</p><div class="masked-wordcloud"><div id="423b3805c9cc43db94d7389604b5cfcd" class="chart-container" style="width:640px; height:640px; "></div>
+          <div class="word-grid"><div class="word-cell"><h3>积极评论高频关键词</h3><p>评论区积极情绪最高频关键词</p><div class="masked-wordcloud"><div id="03c49e7be9874f43a146b20e9eb6f7bf" class="chart-container" style="width:640px; height:640px; "></div>
     <script>
-        var chart_423b3805c9cc43db94d7389604b5cfcd = echarts.init(
-            document.getElementById('423b3805c9cc43db94d7389604b5cfcd'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_423b3805c9cc43db94d7389604b5cfcd = {
+        var chart_03c49e7be9874f43a146b20e9eb6f7bf = echarts.init(
+            document.getElementById('03c49e7be9874f43a146b20e9eb6f7bf'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_03c49e7be9874f43a146b20e9eb6f7bf = {
     "backgroundColor": "transparent",
     "animation": true,
     "animationThreshold": 2000,
@@ -1607,12 +1612,12 @@
         }
     ]
 };
-        chart_423b3805c9cc43db94d7389604b5cfcd.setOption(option_423b3805c9cc43db94d7389604b5cfcd);
-    </script></div></div><div class="word-cell"><h3>中性评论高频关键词</h3><p>评论区中性情绪最高频关键词</p><div class="masked-wordcloud"><div id="1472f38f1a3c44f89f48f1681785d162" class="chart-container" style="width:640px; height:640px; "></div>
+        chart_03c49e7be9874f43a146b20e9eb6f7bf.setOption(option_03c49e7be9874f43a146b20e9eb6f7bf);
+    </script></div></div><div class="word-cell"><h3>中性评论高频关键词</h3><p>评论区中性情绪最高频关键词</p><div class="masked-wordcloud"><div id="84e5436dd508420fafe289db2a5bc638" class="chart-container" style="width:640px; height:640px; "></div>
     <script>
-        var chart_1472f38f1a3c44f89f48f1681785d162 = echarts.init(
-            document.getElementById('1472f38f1a3c44f89f48f1681785d162'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_1472f38f1a3c44f89f48f1681785d162 = {
+        var chart_84e5436dd508420fafe289db2a5bc638 = echarts.init(
+            document.getElementById('84e5436dd508420fafe289db2a5bc638'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_84e5436dd508420fafe289db2a5bc638 = {
     "backgroundColor": "transparent",
     "animation": true,
     "animationThreshold": 2000,
@@ -2333,12 +2338,12 @@
         }
     ]
 };
-        chart_1472f38f1a3c44f89f48f1681785d162.setOption(option_1472f38f1a3c44f89f48f1681785d162);
-    </script></div></div><div class="word-cell"><h3>消极评论高频关键词</h3><p>评论区消极情绪最高频关键词</p><div class="masked-wordcloud"><div id="b7d9e5bdcd21455bb162ec2c73c66611" class="chart-container" style="width:640px; height:640px; "></div>
+        chart_84e5436dd508420fafe289db2a5bc638.setOption(option_84e5436dd508420fafe289db2a5bc638);
+    </script></div></div><div class="word-cell"><h3>消极评论高频关键词</h3><p>评论区消极情绪最高频关键词</p><div class="masked-wordcloud"><div id="47bc859e4221467583fe0857b235675b" class="chart-container" style="width:640px; height:640px; "></div>
     <script>
-        var chart_b7d9e5bdcd21455bb162ec2c73c66611 = echarts.init(
-            document.getElementById('b7d9e5bdcd21455bb162ec2c73c66611'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_b7d9e5bdcd21455bb162ec2c73c66611 = {
+        var chart_47bc859e4221467583fe0857b235675b = echarts.init(
+            document.getElementById('47bc859e4221467583fe0857b235675b'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_47bc859e4221467583fe0857b235675b = {
     "backgroundColor": "transparent",
     "animation": true,
     "animationThreshold": 2000,
@@ -3073,7 +3078,7 @@
         }
     ]
 };
-        chart_b7d9e5bdcd21455bb162ec2c73c66611.setOption(option_b7d9e5bdcd21455bb162ec2c73c66611);
+        chart_47bc859e4221467583fe0857b235675b.setOption(option_47bc859e4221467583fe0857b235675b);
     </script></div></div></div>
         </div>
         <div class="findings">
@@ -3129,15 +3134,13 @@
       <div class="inner fade-in">
         <p class="kicker">图表 2 | 三立场堆叠柱状情绪图</p>
         <h2>同一位选手，赢球时与输球时的舆论情绪并不相同。</h2>
-        <div id="branchNote" class="branch-note">
-          你尚未选择舆论立场。图表会先展示真实评论结构；选择后，这里会显示对应叙事线的提示。
-        </div>
+        <div id="branchNote" class="branch-note"></div>
         <div class="chart-shell tall">
-          <div class="chart"><div id="a1f7ae4720894dd2bd1650c3152cc057" class="chart-container" style="width:100%; height:500px; "></div>
+          <div class="chart"><div id="97b9ae573528471e9bf481eca7651a87" class="chart-container" style="width:100%; height:500px; "></div>
     <script>
-        var chart_a1f7ae4720894dd2bd1650c3152cc057 = echarts.init(
-            document.getElementById('a1f7ae4720894dd2bd1650c3152cc057'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_a1f7ae4720894dd2bd1650c3152cc057 = {
+        var chart_97b9ae573528471e9bf481eca7651a87 = echarts.init(
+            document.getElementById('97b9ae573528471e9bf481eca7651a87'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_97b9ae573528471e9bf481eca7651a87 = {
     "backgroundColor": "transparent",
     "animation": true,
     "animationThreshold": 2000,
@@ -3159,8 +3162,8 @@
                 55.6,
                 60.0,
                 49.0,
-                0,
-                0,
+                49.0,
+                71.1,
                 71.1,
                 68.4,
                 45.2
@@ -3197,8 +3200,8 @@
                 18.3,
                 20.0,
                 27.6,
-                0,
-                0,
+                27.6,
+                17.5,
                 17.5,
                 5.3,
                 52.4
@@ -3235,8 +3238,8 @@
                 26.2,
                 20.0,
                 23.4,
-                0,
-                0,
+                23.4,
+                11.4,
                 11.4,
                 26.3,
                 2.4
@@ -3379,8 +3382,8 @@
                 "\u738b\u695a\u94a6\n\u8d62",
                 "\u738b\u695a\u94a6\n\u8f93",
                 "\u5b59\u9896\u838e\n\u8d62",
-                "\u5b59\u9896\u838e\n\u8f93\uff1a\u6837\u672c\u4e0d\u8db3",
-                "\u84af\u66fc\n\u8d62\uff1a\u6837\u672c\u4e0d\u8db3",
+                "\u5b59\u9896\u838e\n\u8f93",
+                "\u84af\u66fc\n\u8d62",
                 "\u84af\u66fc\n\u8f93",
                 "\u6797\u8bd7\u680b\n\u8d62",
                 "\u6797\u8bd7\u680b\n\u8f93"
@@ -3467,9 +3470,9 @@
         }
     ]
 };
-        chart_a1f7ae4720894dd2bd1650c3152cc057.setOption(option_a1f7ae4720894dd2bd1650c3152cc057);
+        chart_97b9ae573528471e9bf481eca7651a87.setOption(option_97b9ae573528471e9bf481eca7651a87);
             window.addEventListener('resize', function(){
-                chart_a1f7ae4720894dd2bd1650c3152cc057.resize();
+                chart_97b9ae573528471e9bf481eca7651a87.resize();
             })
     </script></div>
         </div>
@@ -3489,11 +3492,11 @@
         <p class="kicker">图表 3 | 舆情桑基流向图</p>
         <h2>从赛前到赛后，情绪如何迁徙？</h2>
         <div class="chart-shell tall">
-          <div class="chart"><div id="4013d86d58354f8aa1055da1c4f639e1" class="chart-container" style="width:100%; height:520px; "></div>
+          <div class="chart"><div id="6a1dda7e68724b7d814457528dd14cce" class="chart-container" style="width:100%; height:520px; "></div>
     <script>
-        var chart_4013d86d58354f8aa1055da1c4f639e1 = echarts.init(
-            document.getElementById('4013d86d58354f8aa1055da1c4f639e1'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_4013d86d58354f8aa1055da1c4f639e1 = {
+        var chart_6a1dda7e68724b7d814457528dd14cce = echarts.init(
+            document.getElementById('6a1dda7e68724b7d814457528dd14cce'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_6a1dda7e68724b7d814457528dd14cce = {
     "backgroundColor": "transparent",
     "animation": true,
     "animationThreshold": 2000,
@@ -3719,9 +3722,9 @@
         }
     ]
 };
-        chart_4013d86d58354f8aa1055da1c4f639e1.setOption(option_4013d86d58354f8aa1055da1c4f639e1);
+        chart_6a1dda7e68724b7d814457528dd14cce.setOption(option_6a1dda7e68724b7d814457528dd14cce);
             window.addEventListener('resize', function(){
-                chart_4013d86d58354f8aa1055da1c4f639e1.resize();
+                chart_6a1dda7e68724b7d814457528dd14cce.resize();
             })
     </script></div>
         </div>
@@ -3763,11 +3766,11 @@
           
         </div>
         <div class="chart-shell tall">
-          <div class="chart"><div id="d97a2a54018749d586afbb21eab78aab" class="chart-container" style="width:100%; height:520px; "></div>
+          <div class="chart"><div id="6d7577aa2d0847a09335f1804a81383e" class="chart-container" style="width:100%; height:520px; "></div>
     <script>
-        var chart_d97a2a54018749d586afbb21eab78aab = echarts.init(
-            document.getElementById('d97a2a54018749d586afbb21eab78aab'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_d97a2a54018749d586afbb21eab78aab = {
+        var chart_6d7577aa2d0847a09335f1804a81383e = echarts.init(
+            document.getElementById('6d7577aa2d0847a09335f1804a81383e'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_6d7577aa2d0847a09335f1804a81383e = {
     "backgroundColor": "transparent",
     "animation": true,
     "animationThreshold": 2000,
@@ -4072,16 +4075,16 @@
         "borderWidth": 0
     }
 };
-        chart_d97a2a54018749d586afbb21eab78aab.setOption(option_d97a2a54018749d586afbb21eab78aab);
+        chart_6d7577aa2d0847a09335f1804a81383e.setOption(option_6d7577aa2d0847a09335f1804a81383e);
             window.addEventListener('resize', function(){
-                chart_d97a2a54018749d586afbb21eab78aab.resize();
+                chart_6d7577aa2d0847a09335f1804a81383e.resize();
             })
     </script></div>
-          <div class="chart"><div id="48432e708e48491d94d63e874450d767" class="chart-container" style="width:100%; height:380px; "></div>
+          <div class="chart"><div id="eeefce4039d34e86b18164d7676f5862" class="chart-container" style="width:100%; height:380px; "></div>
     <script>
-        var chart_48432e708e48491d94d63e874450d767 = echarts.init(
-            document.getElementById('48432e708e48491d94d63e874450d767'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_48432e708e48491d94d63e874450d767 = {
+        var chart_eeefce4039d34e86b18164d7676f5862 = echarts.init(
+            document.getElementById('eeefce4039d34e86b18164d7676f5862'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_eeefce4039d34e86b18164d7676f5862 = {
     "backgroundColor": "transparent",
     "animation": true,
     "animationThreshold": 2000,
@@ -4449,9 +4452,9 @@
         }
     ]
 };
-        chart_48432e708e48491d94d63e874450d767.setOption(option_48432e708e48491d94d63e874450d767);
+        chart_eeefce4039d34e86b18164d7676f5862.setOption(option_eeefce4039d34e86b18164d7676f5862);
             window.addEventListener('resize', function(){
-                chart_48432e708e48491d94d63e874450d767.resize();
+                chart_eeefce4039d34e86b18164d7676f5862.resize();
             })
     </script></div>
         </div>
@@ -4471,11 +4474,11 @@
         <h2>网友到底在讨论什么？</h2>
         <div class="chart-shell">
           <div class="split">
-            <div class="chart"><div id="51bf0e2139964a97835505347ac1bc02" class="chart-container" style="width:100%; height:460px; "></div>
+            <div class="chart"><div id="36495998f82f4bd9a46289c6ca32030e" class="chart-container" style="width:100%; height:460px; "></div>
     <script>
-        var chart_51bf0e2139964a97835505347ac1bc02 = echarts.init(
-            document.getElementById('51bf0e2139964a97835505347ac1bc02'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_51bf0e2139964a97835505347ac1bc02 = {
+        var chart_36495998f82f4bd9a46289c6ca32030e = echarts.init(
+            document.getElementById('36495998f82f4bd9a46289c6ca32030e'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_36495998f82f4bd9a46289c6ca32030e = {
     "backgroundColor": "transparent",
     "animation": true,
     "animationThreshold": 2000,
@@ -4736,9 +4739,9 @@
         }
     ]
 };
-        chart_51bf0e2139964a97835505347ac1bc02.setOption(option_51bf0e2139964a97835505347ac1bc02);
+        chart_36495998f82f4bd9a46289c6ca32030e.setOption(option_36495998f82f4bd9a46289c6ca32030e);
             window.addEventListener('resize', function(){
-                chart_51bf0e2139964a97835505347ac1bc02.resize();
+                chart_36495998f82f4bd9a46289c6ca32030e.resize();
             })
     </script></div>
             <div>
@@ -4870,11 +4873,11 @@
         <p class="kicker">图表 4 | 8 选手气泡动力散点图</p>
         <h2>赞美与质疑，在坐标系里分层。</h2>
         <div class="chart-shell tall">
-          <div class="chart"><div id="95a7aa51b23943e583157688f927f756" class="chart-container" style="width:100%; height:500px; "></div>
+          <div class="chart"><div id="6f9ac723c53941f3bfec15dc0ad207d5" class="chart-container" style="width:100%; height:500px; "></div>
     <script>
-        var chart_95a7aa51b23943e583157688f927f756 = echarts.init(
-            document.getElementById('95a7aa51b23943e583157688f927f756'), 'white', {renderer: 'canvas', locale: 'ZH'});
-        var option_95a7aa51b23943e583157688f927f756 = {
+        var chart_6f9ac723c53941f3bfec15dc0ad207d5 = echarts.init(
+            document.getElementById('6f9ac723c53941f3bfec15dc0ad207d5'), 'white', {renderer: 'canvas', locale: 'ZH'});
+        var option_6f9ac723c53941f3bfec15dc0ad207d5 = {
     "backgroundColor": "transparent",
     "animation": true,
     "animationThreshold": 2000,
@@ -5367,9 +5370,9 @@
         }
     ]
 };
-        chart_95a7aa51b23943e583157688f927f756.setOption(option_95a7aa51b23943e583157688f927f756);
+        chart_6f9ac723c53941f3bfec15dc0ad207d5.setOption(option_6f9ac723c53941f3bfec15dc0ad207d5);
             window.addEventListener('resize', function(){
-                chart_95a7aa51b23943e583157688f927f756.resize();
+                chart_6f9ac723c53941f3bfec15dc0ad207d5.resize();
             })
     </script></div>
         </div>
@@ -5493,6 +5496,7 @@
         const choice = button.dataset.choice;
         warmResult.classList.toggle("is-visible", choice === "warm");
         pressureResult.classList.toggle("is-visible", choice === "pressure");
+        branchNote.classList.add("is-visible");
         branchNote.classList.toggle("pressure", choice === "pressure");
         if (choice === "warm") {
           branchNote.textContent = "你传递了一份鼓励。温和的舆论氛围，让选手在赛中被更善意地看待；你的一条鼓励，就是这类数据里的一票。";
